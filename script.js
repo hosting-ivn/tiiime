@@ -6,8 +6,8 @@ $(document).ready(function () {
         let isMobile = window.innerWidth <= 768;
 
 
-        let baseStretch = 15;
-        let mobileMultiplier = 2; 
+        let baseStretch = 13;
+        let mobileMultiplier = 2;
         let scaleFactor = 1 + (isMobile ? baseStretch * mobileMultiplier : baseStretch) * (secondsElapsed / 3600);
 
         let text = "12.1234567891011";
