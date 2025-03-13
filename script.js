@@ -6,7 +6,7 @@ $(document).ready(function () {
         let isMobile = window.innerWidth <= 768;
 
 
-        let baseStretch = 11;
+        let baseStretch = 17;
         let mobileMultiplier = 2;
         let scaleFactor = 1 + (isMobile ? baseStretch * mobileMultiplier : baseStretch) * (secondsElapsed / 3600);
 
