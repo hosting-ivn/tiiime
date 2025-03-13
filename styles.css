@@ -1,0 +1,77 @@
+html, body {
+  margin: 0;
+  padding: 50px;
+  height: calc(100vh - 100px);
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+
+#animated-container {
+  transition: transform 0.5s ease;
+}
+
+#animated-text {
+    font-size: 6vw;
+  text-align: center;
+  line-height: 1.2;
+  display: inline-flex;
+}
+
+#animated-text span.char {
+  margin: 0 0.15em;
+}
+
+.stretch {
+  transition: transform 1s linear;
+  display: inline-block;
+}
+
+/* Small Clock */
+#bottom-clock {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: #777;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif;
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 20px 15px;
+    height: calc(100vh - 100px);
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+
+  }
+
+    #animated-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 8vw;
+        line-height: .9;
+    }
+
+
+    #animated-text span.char {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .stretch {
+        transition: transform 1s linear;
+        display: inline-block;
+    }
+}
